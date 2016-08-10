@@ -1,7 +1,10 @@
+[![Build Status](https://travis-ci.org/AVGTechnologies/travis-logs.png?branch=master)](https://travis-ci.org/AVGTechnologies/travis-logs)
+[![Code Climate](https://codeclimate.com/github/AVGTechnologies/travis-logs/badges/gpa.svg)](https://codeclimate.com/github/AVGTechnologies/travis-logs)
+[![Test Coverage](https://codeclimate.com/github/AVGTechnologies/travis-logs/badges/coverage.svg)](https://codeclimate.com/github/AVGTechnologies/travis-logs/coverage)
+[![Issue Count](https://codeclimate.com/github/AVGTechnologies/travis-logs/badges/issue_count.svg)](https://codeclimate.com/github/AVGTechnologies/travis-logs)
+
 # Travis Logs
 **************************
-
-[![Build Status](https://travis-ci.org/travis-ci/travis-logs.png?branch=master)](https://travis-ci.org/travis-ci/travis-logs)
 
 Travis Logs processes log updates which are streamed from [Travis Worker](https://github.com/travis-ci/travis-worker) instances via [RabbitMQ](http://www.rabbitmq.com/). The log parts are streamed via [Pusher](http://pusher.com/) to the web client ([Travis Web](http://github.com/travis-ci/travis-web)) and added to the database.
 
