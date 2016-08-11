@@ -2,6 +2,7 @@ require 'ostruct'
 require 'travis/logs'
 require 'travis/logs/app'
 require 'rack/test'
+require 'spec_helper'
 
 ENV['RACK_ENV'] = 'test'
 
