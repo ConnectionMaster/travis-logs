@@ -1,7 +1,6 @@
 language: ruby
 rvm:
   - jruby-1.7.16
-  - jruby-head
 jdk: openjdk7
 sudo: false
 cache: bundler
@@ -13,7 +12,6 @@ before_script:
   - psql -c "CREATE DATABASE travis_logs_test;" -U postgres
   - cp config/travis.example.yml config/travis.yml
   - bundle exec rake db:migrate
-script: bundle exec rspec spec
-matrix:
-  allow_failures:
-    - rvm: jruby-head
+script: JRUBY_OPTS="--debug" bundle exec rspec spec
+# JRUBY_OPTS="--debug" added because od codeclimate inaccuracy
+# Coverage may be inaccurate; set the "--debug" command line option, or do JRUBY_OPTS="--debug" or set the "debug.fullTrace=true" option in your .jrubyrc

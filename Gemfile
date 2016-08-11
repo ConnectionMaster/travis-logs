@@ -27,8 +27,9 @@ gem 'rails_12factor'
 gem 'rake'
 
 group :test do
-  gem 'rspec',            '~> 2.14.1'
+  gem 'rspec'
   gem 'rack-test'
+  gem 'codeclimate-test-reporter'
 end
 
 gem 'sinatra', '~> 1.4'
